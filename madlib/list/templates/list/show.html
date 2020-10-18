@@ -1,0 +1,18 @@
+{% extends 'list/base.html' %}
+
+{% block body %}
+    <div class="container py-5">
+        <div class="row">
+            <div class="col pb-2">
+                <h3 class="text-center">{{ lib.name }}</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border">
+                {{ story}}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+

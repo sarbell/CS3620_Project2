@@ -1,0 +1,23 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Mad Libs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'list/style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar bg-light shadow">
+  <a href="{% url 'list:home'%}" class="navbar-brand text-uppercase text-dark">Mad Libs</a>
+      <div class="navbar">
+        <a href="{% url 'list:home'%}" class="nav-item nav-link text-info">Mad LIBrary</a>
+        <a href="#" class="nav-item nav-link text-info">Current </a>
+        <a href="#" class="nav-item nav-link text-info">Latest</a>
+      </div>
+</nav>
+{% block body %}
+{% endblock %}
+</body>
+</html>

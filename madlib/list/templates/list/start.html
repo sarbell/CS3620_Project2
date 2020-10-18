@@ -1,0 +1,33 @@
+{% extends 'list/base.html' %}
+
+{% block body %}
+    <div class="container py-5">
+        <div class="row">
+            <div class="col pb-2">
+                <h3 class="text-center">{{ lib.name }}</h3>
+            </div>
+        </div>
+        <form method="POST">
+        {% csrf_token %}
+            <div class="row">
+                {% for type in lib_type_list %}
+                    {% for word in type %}
+                <div class="col-sm-12 col-md-8 col-lg-6 py-2">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" >{{ word }}</span>
+                      </div>
+                      <input type="text" class="form-control">
+                    </div>
+                </div>
+                    {% endfor %}
+                {% endfor %}
+                 <div class="col text-center">
+                    <a href="{% url 'list:show' lib.id %}" type="submit" class="btn btn-info">Show Me My Mad Lib!!! </a>
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}
+
+

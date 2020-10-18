@@ -1,0 +1,35 @@
+{% extends 'list/base.html' %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+{% block body %}
+    <div class="container py-5">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="introTitle">Welcome to the Mad Lib Library!</h1>
+                <h2 class="smallTitle">...or the <strong>Mad LIB</strong>rary...bwahaha</h2>
+            </div>
+        </div>
+        <p class="instruction pt-5">Pick a story from the list to get started on your Mad Lib adventure!</p>
+        <div class="row pt-2">
+            <div class="col">
+                <ul class="py-2">
+                    {% for mad_lib in mad_lib_list %}
+                        <li><a href="{% url 'list:start' mad_lib.id %}">{{ mad_lib.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+</body>
+</html>
