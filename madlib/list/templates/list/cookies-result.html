@@ -1,0 +1,43 @@
+{% extends 'list/base.html' %}
+{% block body %}
+    <div class="container py-5">
+        <div class="row">
+            <div class="col pb-2">
+                <h3 class="text-center">{{ results }}</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col py-3 px-5 border">
+                <h5 class="py-3 text-info story">Chewy Chocolate Chip Cookies</h5>
+                <span class="story">
+                    <h6>Ingredients<h6>
+                        <ul>
+                            <li>2 and 1/4 cups all-purpose {{ results.field1 }}</li>
+                            <li>1 teaspoon baking soda</li>
+                            <li>1  {{ results.field2 }} cornstarch</li>
+                            <li>1/2 teaspoon salt</li>
+                            <li>3/4 cup unsalted {{ results.field3 }}</li>
+                            <li>3/4 cup packed brown sugar</li>
+                            <li>1/2 {{ results.field4 }} sugar</li>
+                            <li>1 {{ results.field5 }} egg + 1 egg yolk</li>
+                            <li>2 teaspoons {{ results.field6 }} vanilla extract</li>
+                            <li>{{ results.field7 }} cups chocolate chips</li>
+                        </ul>
+                        <h6>Instructions</h6>
+                        <ol>
+                            <li>Whisk the flour, baking soda, cornstarch, and salt together in a {{ results.field8 }} bowl. Set aside</li>
+                            <li>In a medium bowl, whisk the melted {{ results.field9 }},
+                                brown sugar, and sugar together until no brown sugar {{ results.field10 }} remain.
+                                {{ results.field11 }} in the egg, then the egg yolk. Finally, whisk in the vanilla extract.
+                                Pour the wet ingredients into the {{ results.field12 }} ingredients and mix together.</li>
+                            <li>Preheat oven to 325°F</li>
+                            <li>Place 8 balls of dough onto each {{ results.field13 }} sheet. </li>
+                            <li>Bake the cookies for 12-13 minutes</li>
+                        </ol>
+                </span>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+

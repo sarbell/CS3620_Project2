@@ -32,10 +32,73 @@ class Lib(models.Model):
     verb_ending_in_ing = models.IntegerField(default=0)
 
 
-
-class List(models.Model):
+class BrickElement(models.Model):
     def __str__(self):
         return self.name
+    name =  models.CharField(max_length=100, default="Bricks")
+    field1 = models.CharField(max_length=500, default="")
+    field2 = models.CharField(max_length=200, default="")
+    field3 = models.CharField(max_length=200, default="")
+    field4 = models.CharField(max_length=200, default="")
+    field5 = models.CharField(max_length=200, default="")
+    field6 = models.CharField(max_length=200, default="")
+    field7 = models.CharField(max_length=200,default="")
+    field8 = models.CharField(max_length=200,default="")
+    field9 = models.CharField(max_length=200, default="")
 
-    name = models.CharField(max_length=500)
-    template = models.CharField(max_length=200, default="home")
+
+class SeptemberElement(models.Model):
+    def __str__(self):
+        return self.name
+    name =  models.CharField(max_length=100, default="September")
+    field1 = models.CharField(max_length=500, default="")
+    field2 = models.CharField(max_length=200, default="")
+    field3 = models.CharField(max_length=200, default="")
+    field4 = models.CharField(max_length=200, default="")
+    field5 = models.CharField(max_length=200, default="")
+    field6 = models.CharField(max_length=200, default="")
+    field7 = models.CharField(max_length=200, default="")
+    field8 = models.CharField(max_length=200, default="")
+    field9 = models.CharField(max_length=200, default="")
+    field10 = models.CharField(max_length=200, default="")
+    field11 = models.CharField(max_length=200, default="")
+    field12 = models.CharField(max_length=200, default="")
+    field13 = models.CharField(max_length=200, default="")
+    field14 = models.CharField(max_length=200, default="")
+    field15 = models.CharField(max_length=200, default="")
+    field16 = models.CharField(max_length=200, default="")
+
+
+
+class RockElement(models.Model):
+    def __str__(self):
+        return self.name
+    name =  models.CharField(max_length=100, default="Rock You")
+    field1 = models.CharField(max_length=500, default="")
+    field2 = models.CharField(max_length=200, default="")
+    field3 = models.CharField(max_length=200, default="")
+    field4 = models.CharField(max_length=200, default="")
+    field5 = models.CharField(max_length=200, default="")
+    field6 = models.CharField(max_length=200, default="")
+    field7 = models.CharField(max_length=200, default="")
+    field8 = models.CharField(max_length=200, default="")
+
+
+class CookieElement(models.Model):
+    def __str__(self):
+        return self.name
+    name =  models.CharField(max_length=100, default="Chewy Cookies")
+    field1 = models.CharField(max_length=500, default="")
+    field2 = models.CharField(max_length=200, default="")
+    field3 = models.CharField(max_length=200, default="")
+    field4 = models.CharField(max_length=200, default="")
+    field5 = models.CharField(max_length=200, default="")
+    field6 = models.CharField(max_length=200, default="")
+    field7 = models.CharField(max_length=200, default="")
+    field8 = models.CharField(max_length=200, default="")
+    field9 = models.CharField(max_length=200, default="")
+    field10 = models.CharField(max_length=200, default="")
+    field11 = models.CharField(max_length=200, default="")
+    field12 = models.CharField(max_length=200, default="")
+    field13 = models.CharField(max_length=200, default="")
+

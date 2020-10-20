@@ -22,9 +22,29 @@
         <div class="row pt-2">
             <div class="col">
                 <ul class="py-2">
-                    {% for mad_lib in mad_lib_list %}
-                        <li><a href="{% url 'list:start' mad_lib.id %}">{{ mad_lib.name }}</a></li>
-                    {% endfor %}
+{#                    {% for mad_lib in mad_lib_list %}#}
+                        <li><a href="{% url 'list:brick_form' %}">Brick</a></li>
+                        <li><a href="{% url 'list:september_form' %}">September</a></li>
+                        <li><a href="{% url 'list:rock_form' %}">Rock You</a></li>
+                        <li><a href="{% url 'list:cookies_form' %}">Chewy Cookies</a></li>
+
+                        <li><a href="{% url 'list:brick_form' %}">Noodle Soup</a></li>
+                        <li><a href="{% url 'list:brick_form' %}">Road Rage</a></li>
+                        <li><a href="{% url 'list:brick_form' %}">Words of Inspiration</a></li>
+
+                        <li><a href="{% url 'list:brick_form' %}">September</a></li>
+                        <li><a href="{% url 'list:brick_form' %}">September</a></li>
+                        <li><a href="{% url 'list:brick_form' %}">September</a></li>
+                        <li><a href="{% url 'list:brick_form' %}">September</a></li>
+                        <li><a href="{% url 'list:brick_form' %}">September</a></li>
+                        <li><a href="{% url 'list:brick_form' %}">September</a></li>
+                        <li><a href="{% url 'list:brick_form' %}">September</a></li>
+                        <li><a href="{% url 'list:brick_form' %}">September</a></li>
+                        <li><a href="{% url 'list:brick_form' %}">September</a></li>
+                        <li><a href="{% url 'list:brick_form' %}">September</a></li>
+
+
+{#                    {% endfor %}#}
                 </ul>
             </div>
         </div>

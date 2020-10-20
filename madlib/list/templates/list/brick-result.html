@@ -1,0 +1,25 @@
+{% extends 'list/base.html' %}
+{% block body %}
+    <div class="container py-5">
+        <div class="row">
+            <div class="col pb-2">
+                <h3 class="text-center">{{ results }}</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col py-3 px-5 border">
+                <h5 class="py-3 text-info story">Another Brick in the Wall (Part 2) By Pink Floyd</h5>
+                <p class="story">We don't need no {{ results.field1 }}<br>
+                    We don't need no {{ results.field2 }} control <br>
+                    No {{ results.field3 }} sarcasm in the {{ results.field4 }} <br>
+                    Teachers leave them {{ results.field5 }} alone <br>
+                    Hey, {{ results.field6 }}, leave them {{ results.field7 }} alone <br>
+                    All in all it's just another {{ results.field8 }} in the wall <br>
+                    All in all you're just another brick in the {{ results.field9 }}
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+

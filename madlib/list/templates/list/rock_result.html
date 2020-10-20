@@ -1,0 +1,31 @@
+{% extends 'list/base.html' %}
+{% block body %}
+    <div class="container py-5">
+        <div class="row">
+            <div class="col pb-2">
+                <h3 class="text-center">{{ results }}</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col py-3 px-5 border">
+                <h5 class="py-3 text-info story">We Will Rock You</h5>
+                <p class="story">
+                    {{ results.field1 }}, you're a boy, make a {{ results.field2 }} {{ results.field3 }} <br>
+                    Playing in the street, gonna be a {{ results.field4 }} man someday<br>
+                    You got {{ results.field5 }} on your face, you big disgrace<br>
+                    Kicking your can all over the place, {{ results.field6 }}'<br>
+                    We will, we will rock you<br>
+                    We will, we will rock you<br>
+                    Buddy, you're a young man, hard man<br>
+                    {{ results.field7 }} in the street, gonna take on the world someday<br>
+                    You got blood on your face, you big disgrace<br>
+                    Waving your {{ results.field8 }} all over the place<br>
+                    We will, we will rock you, sing it!<br>
+                    We will, we will rock you, yeah...<br>
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+

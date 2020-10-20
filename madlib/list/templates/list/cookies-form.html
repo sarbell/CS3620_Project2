@@ -1,0 +1,73 @@
+{% extends 'list/base.html' %}
+
+{% block body %}
+    <div class="container py-5">
+        <div class="row">
+            <div class="col pb-2">
+                <h3 class="text-left">Chewy Cookies</h3>
+            </div>
+        </div>
+        <form method="POST">
+         {% csrf_token %}
+         <div class="row">
+             <div class="col-12 py-2">
+                <div class="fieldWrapper py-2">
+                    <label for="{{ form.field1.id_for_label }}">Noun</label>
+                    {{ form.field1 }}
+                </div>
+                <div class="fieldWrapper py-2">
+                    <label for="{{ form.field2.id_for_label }}">Unit of Measurement</label>
+                    {{ form.field2 }}
+                </div>
+                <div class="fieldWrapper py-2">
+                    <label for="{{ form.field3.id_for_label }}">Noun</label>
+                    {{ form.field3 }}
+                </div>
+                <div class="fieldWrapper py-2">
+                    <label for="{{ form.field4.id_for_label }}">Unit of Measurement</label>
+                    {{ form.field4 }}
+                </div>
+                <div class="fieldWrapper py-2">
+                    <label for="{{ form.field5.id_for_label }}">Adjective</label>
+                    {{ form.field5 }}
+                </div>
+                <div class="fieldWrapper py-2">
+                    <label for="{{ form.field6.id_for_label }}">Adjective</label>
+                    {{ form.field6 }}
+                </div>
+                <div class="fieldWrapper py-2">
+                    <label for="{{ form.field7.id_for_label }}">Large Number</label>
+                    {{ form.field7 }}
+                </div>
+                <div class="fieldWrapper py-2">
+                    <label for="{{ form.field8.id_for_label }}">Adjective</label>
+                    {{ form.field8 }}
+                </div>
+                <div class="fieldWrapper py-2">
+                    <label for="{{ form.field9.id_for_label }}">Noun</label>
+                    {{ form.field9 }}
+                </div>
+                <div class="fieldWrapper py-2">
+                    <label for="{{ form.field10.id_for_label }}">Noun</label>
+                    {{ form.field10 }}
+                </div>
+                 <div class="fieldWrapper py-2">
+                    <label for="{{ form.field11.id_for_label }}">Verb</label>
+                    {{ form.field11 }}
+                </div>
+                 <div class="fieldWrapper py-2">
+                    <label for="{{ form.field12.id_for_label }}">Adjective</label>
+                    {{ form.field12 }}
+                </div>
+                 <div class="fieldWrapper py-2">
+                    <label for="{{ form.field13.id_for_label }}">Noun</label>
+                    {{ form.field13 }}
+                </div>
+
+                </div>
+                     <div class="col text-center">
+                         <button type="submit" class="btn btn-info">Show Me My Mad Lib!!! </button>
+                    </div>
+                </div>
+        </form>
+{% endblock %}
