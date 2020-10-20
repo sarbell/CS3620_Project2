@@ -1,0 +1,56 @@
+{% extends 'list/base.html' %}
+
+{% block body %}
+    <div class="container py-5">
+        <div class="row">
+            <div class="col pb-2">
+                <h3 class="text-left">Noodle Soup</h3>
+            </div>
+        </div>
+        <form method="POST">
+         {% csrf_token %}
+         <div class="row">
+             <div class="col-12 py-2">
+                <div class="fieldWrapper py-2">
+                    <label for="{{ form.field1.id_for_label }}">Unit of Measurement (volume)</label>
+                    {{ form.field1 }}
+                </div>
+                <div class="fieldWrapper py-2">
+                    <label for="{{ form.field2.id_for_label }}">Noun</label>
+                    {{ form.field2 }}
+                </div>
+                <div class="fieldWrapper py-2">
+                    <label for="{{ form.field3.id_for_label }}">Verb, Past Tense</label>
+                    {{ form.field3 }}
+                </div>
+                <div class="fieldWrapper py-2">
+                    <label for="{{ form.field4.id_for_label }}">Noun</label>
+                    {{ form.field4 }}
+                </div>
+                <div class="fieldWrapper py-2">
+                    <label for="{{ form.field5.id_for_label }}">Verb, Past Tense</label>
+                    {{ form.field5 }}
+                </div>
+                <div class="fieldWrapper py-2">
+                    <label for="{{ form.field6.id_for_label }}">Plural Noun</label>
+                    {{ form.field6 }}
+                </div>
+                <div class="fieldWrapper py-2">
+                    <label for="{{ form.field7.id_for_label }}">Number</label>
+                    {{ form.field7 }}
+                </div>
+                <div class="fieldWrapper py-2">
+                    <label for="{{ form.field8.id_for_label }}">Spice</label>
+                    {{ form.field8 }}
+                </div>
+                <div class="fieldWrapper py-2">
+                    <label for="{{ form.field9.id_for_label }}">Verb Ending in ing</label>
+                    {{ form.field9 }}
+                </div>
+                </div>
+                     <div class="col text-center">
+                         <button type="submit" class="btn btn-info">Show Me My Mad Lib!!! </button>
+                    </div>
+                </div>
+        </form>
+{% endblock %}

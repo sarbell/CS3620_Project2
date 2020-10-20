@@ -1,0 +1,26 @@
+{% extends 'list/base.html' %}
+{% block body %}
+    <div class="container py-5">
+        <div class="row">
+            <div class="col pb-2">
+                <h3 class="text-center">{{ results }}</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col py-3 px-5 border">
+                <span class="story">
+                    <h5>Dear Santa...</h5>
+                <p>
+                    My name is {{ results.field1 }}. I am {{ results.field2 }} years old and I am very {{ results.field3 }}.
+                    I love Christmas time because of the {{ results.field4 }}, and {{ results.field5 }}! <br>
+                    This year I have been extra {{ results.field6 }}. I am really hoping for a new {{ results.field7 }} this year!<br>
+                    love,<br>
+                    {{ results.field1 }}
+                </p>
+                </span>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+

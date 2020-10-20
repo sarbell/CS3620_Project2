@@ -1,0 +1,40 @@
+{% extends 'list/base.html' %}
+{% block body %}
+    <div class="container py-5">
+        <div class="row">
+            <div class="col pb-2">
+                <h3 class="text-center">{{ results }}</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col py-3 px-5 border">
+                <h5 class="py-3 text-info story">Easy Chicken Noodle Soup</h5>
+                <span class="story">
+                    <h6>Ingredients<h6>
+                        <ul>
+                            <li>1 {{ results.field1 }} butter </li>
+                            <li>½ cup chopped {{ results.field2 }} </li>
+                            <li>½ cup {{ results.field3 }} celery </li>
+                            <li>4 (14.5 ounce) cans chicken broth </li>
+                            <li>1 (14.5 ounce) can {{ results.field4 }} broth </li>
+                            <li>½ pound {{ results.field5 }} cooked chicken breast </li>
+                            <li>1 ½ cups egg noodles </li>
+                            <li>1 cup sliced {{ results.field6 }} </li>
+                            <li>{{ results.field7 }} teaspoon dried basil </li>
+                            <li>½ teaspoon dried oregano </li>
+                            <li>salt and pepper to taste </li>
+                        </ul>
+                        <h6>Instructions</h6>
+                        <p>
+                        In a large pot over medium heat, melt butter. Cook onion and celery in butter until
+                            just tender, 5 minutes. Pour in chicken and vegetable broths and stir in chicken,
+                            noodles, carrots, {{ results.field8 }}, oregano, salt and pepper. Bring to a boil, then reduce heat
+                            and simmer 20 minutes before {{ results.field9 }}.
+                        </p>
+                </span>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+

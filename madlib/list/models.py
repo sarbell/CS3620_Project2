@@ -102,3 +102,87 @@ class CookieElement(models.Model):
     field12 = models.CharField(max_length=200, default="")
     field13 = models.CharField(max_length=200, default="")
 
+class SoupElement(models.Model):
+    def __str__(self):
+        return self.name
+    name =  models.CharField(max_length=100, default="Noodle Soup")
+    field1 = models.CharField(max_length=500, default="")
+    field2 = models.CharField(max_length=200, default="")
+    field3 = models.CharField(max_length=200, default="")
+    field4 = models.CharField(max_length=200, default="")
+    field5 = models.CharField(max_length=200, default="")
+    field6 = models.CharField(max_length=200, default="")
+    field7 = models.CharField(max_length=200, default="")
+    field8 = models.CharField(max_length=200, default="")
+    field9 = models.CharField(max_length=200, default="")
+
+
+class RageElement(models.Model):
+    def __str__(self):
+        return self.name
+    name =  models.CharField(max_length=100, default="Road Rage")
+    field1 = models.CharField(max_length=500, default="")
+    field2 = models.CharField(max_length=200, default="")
+    field3 = models.CharField(max_length=200, default="")
+    field4 = models.CharField(max_length=200, default="")
+    field5 = models.CharField(max_length=200, default="")
+    field6 = models.CharField(max_length=200, default="")
+    field7 = models.CharField(max_length=200, default="")
+    field8 = models.CharField(max_length=200, default="")
+    field9 = models.CharField(max_length=200, default="")
+    field10 = models.CharField(max_length=200, default="")
+
+
+class QuoteElement(models.Model):
+    def __str__(self):
+        return self.name
+    name =  models.CharField(max_length=100, default="Inspirational Quote")
+    field1 = models.CharField(max_length=500, default="")
+    field2 = models.CharField(max_length=200, default="")
+    field3 = models.CharField(max_length=200, default="")
+    field4 = models.CharField(max_length=200, default="")
+    field5 = models.CharField(max_length=200, default="")
+    field6 = models.CharField(max_length=200, default="")
+    field7 = models.CharField(max_length=200, default="")
+
+
+
+class Poem1Element(models.Model):
+    def __str__(self):
+        return self.name
+    name =  models.CharField(max_length=100, default="Love Poem")
+    field1 = models.CharField(max_length=500, default="")
+    field2 = models.CharField(max_length=200, default="")
+    field3 = models.CharField(max_length=200, default="")
+    field4 = models.CharField(max_length=200, default="")
+
+
+
+class Poem3Element(models.Model):
+    def __str__(self):
+        return self.name
+    name =  models.CharField(max_length=100, default="How Do I Love Thee?")
+    field1 = models.CharField(max_length=500, default="")
+    field2 = models.CharField(max_length=200, default="")
+    field3 = models.CharField(max_length=200, default="")
+    field4 = models.CharField(max_length=200, default="")
+    field5 = models.CharField(max_length=200, default="")
+    field6 = models.CharField(max_length=200, default="")
+    field7 = models.CharField(max_length=200, default="")
+    field8 = models.CharField(max_length=200, default="")
+    field9 = models.CharField(max_length=200, default="")
+    field10 = models.CharField(max_length=200, default="")
+    field11 = models.CharField(max_length=200, default="")
+
+
+class StoryElement(models.Model):
+    def __str__(self):
+        return self.name
+    name =  models.CharField(max_length=100, default="A Mad Lib Story")
+    field1 = models.CharField(max_length=500, default="")
+    field2 = models.CharField(max_length=200, default="")
+    field3 = models.CharField(max_length=200, default="")
+    field4 = models.CharField(max_length=200, default="")
+    field5 = models.CharField(max_length=200, default="")
+    field6 = models.CharField(max_length=200, default="")
+    field7 = models.CharField(max_length=200, default="")

@@ -1,0 +1,28 @@
+{% extends 'list/base.html' %}
+{% block body %}
+    <div class="container py-5">
+        <div class="row">
+            <div class="col pb-2">
+                <h3 class="text-center">{{ results }}</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col py-3 px-5 border">
+                <span class="story">
+                <p>
+                A man was {{ results.field1 }} on a {{ results.field2 }} highway on a dark {{ results.field3 }} night, waiting to hitch a ride back home.
+                    After a long time, he saw a car approaching him very {{ results.field4 }} and silently, suddenly stopping before him.
+                    Desperate to get home, the man jumped into the car, only to realise that there was no one in the car,
+                    not even the driver. As the car approached a bend, a {{ results.field5 }} appeared out of nowhere and steered the car
+                    over the bend safely. Scared the man jumped off the car and ran all the way to the nearest {{ results.field6 }} shop.
+                    As he entered the shop, a couple of guys shouted at him, ”Hey! Here’s the idiot who jumped into our car
+                    while we were {{ results.field7 }} it over the hill”.
+                </p>
+                </span>
+                <p>(story by By Tilottama Chatterjee) </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+

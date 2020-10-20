@@ -1,0 +1,27 @@
+{% extends 'list/base.html' %}
+{% block body %}
+    <div class="container py-5">
+        <div class="row">
+            <div class="col pb-2">
+                <h3 class="text-center">{{ results }}</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col py-3 px-5 border">
+                <span class="story">
+                    <h5>Three Blind Mice</h5>
+                <p>
+                    Three {{ results.field1 }} mice. {{ results.field2 }} blind mice.
+                    See how they {{ results.field3 }}. {{ results.field4 }} how they run.
+                    They all ran after the {{ results.field5 }}’s wife,
+                    Who cut off their tails with a carving {{ results.field6 }},
+                    Did you ever see such a sight in your life,
+                    As three blind {{ results.field7 }}?
+                </p>
+                </span>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+

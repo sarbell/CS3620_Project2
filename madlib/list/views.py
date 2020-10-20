@@ -1,7 +1,9 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from .models import  Lib, BrickElement, SeptemberElement, RockElement, CookieElement
-from .forms import BrickForm, SeptemberForm, RockForm, CookieForm
+from .models import  Lib, BrickElement, SeptemberElement, RockElement, CookieElement, SoupElement, RageElement, QuoteElement, \
+    Poem1Element, Poem3Element, StoryElement
+from .forms import BrickForm, SeptemberForm, RockForm, CookieForm, SoupForm, RageForm, QuoteForm, Poem1Form, Poem3Form,\
+    StoryForm
 from django import template
 
 
@@ -193,8 +195,190 @@ def cookies_result(request):
     return render(request, 'list/cookies-result.html', {'results': results})
 
 
+def soup_form(request):
+    lib = Lib.objects.all()
+    form = SoupForm(request.POST or None)
+
+    if form.is_valid():
+        form.save()
+        return redirect('list:soup_results')
+    return render(request, 'list/soup-form.html', {'lib':lib, 'form':form})
 
 
+
+def soup_result(request):
+    results = SoupElement.objects.all().last()
+    return render(request, 'list/soup-result.html', {'results': results})
+
+
+
+def rage_form(request):
+    lib = Lib.objects.all()
+    form = RageForm(request.POST or None)
+
+    if form.is_valid():
+        form.save()
+        return redirect('list:rage_results')
+    return render(request, 'list/rage_form.html', {'lib':lib, 'form':form})
+
+
+def rage_result(request):
+    results = RageElement.objects.all().last()
+    return render(request, 'list/rage_result.html', {'results': results})
+
+
+
+def quote_form(request):
+    lib = Lib.objects.all()
+    form = QuoteForm(request.POST or None)
+
+    if form.is_valid():
+        form.save()
+        return redirect('list:quote_results')
+    return render(request, 'list/quote-form.html', {'lib':lib, 'form':form})
+
+
+def quote_result(request):
+    results = QuoteElement.objects.all().last()
+    return render(request, 'list/quote-result.html', {'results': results})
+
+
+def poem1_form(request):
+    lib = Lib.objects.all()
+    form = Poem1Form(request.POST or None)
+
+    if form.is_valid():
+        form.save()
+        return redirect('list:poem1_results')
+    return render(request, 'list/poem1-form.html', {'lib':lib, 'form':form})
+
+
+def poem1_result(request):
+    results = Poem1Element.objects.all().last()
+    return render(request, 'list/poem1-result.html', {'results': results})
+
+
+def poem2_form(request):
+    lib = Lib.objects.all()
+    form = Poem1Form(request.POST or None)
+
+    if form.is_valid():
+        form.save()
+        return redirect('list:poem2_results')
+    return render(request, 'list/poem2-form.html', {'lib':lib, 'form':form})
+
+
+def poem2_result(request):
+    results = Poem1Element.objects.all().last()
+    return render(request, 'list/poem2-result.html', {'results': results})
+
+
+def poem3_form(request):
+    lib = Lib.objects.all()
+    form = Poem3Form(request.POST or None)
+
+    if form.is_valid():
+        form.save()
+        return redirect('list:poem3_results')
+    return render(request, 'list/poem3-form.html', {'lib':lib, 'form':form})
+
+
+def poem3_result(request):
+    results = Poem3Element.objects.all().last()
+    return render(request, 'list/poem3-result.html', {'results': results})
+
+
+
+def trick_form(request):
+    lib = Lib.objects.all()
+    form = StoryForm(request.POST or None)
+
+    if form.is_valid():
+        form.save()
+        return redirect('list:trick_results')
+    return render(request, 'list/trick-form.html', {'lib':lib, 'form':form})
+
+
+def trick_result(request):
+    results = StoryElement.objects.all().last()
+    return render(request, 'list/trick-result.html', {'results': results})
+
+
+
+def ghost_form(request):
+    lib = Lib.objects.all()
+    form = StoryForm(request.POST or None)
+
+    if form.is_valid():
+        form.save()
+        return redirect('list:ghost_results')
+    return render(request, 'list/ghost-form.html', {'lib':lib, 'form':form})
+
+
+def ghost_result(request):
+    results = StoryElement.objects.all().last()
+    return render(request, 'list/ghost-result.html', {'results': results})
+
+
+def star_form(request):
+    lib = Lib.objects.all()
+    form = StoryForm(request.POST or None)
+
+    if form.is_valid():
+        form.save()
+        return redirect('list:star_results')
+    return render(request, 'list/star-form.html', {'lib':lib, 'form':form})
+
+
+def star_result(request):
+    results = StoryElement.objects.all().last()
+    return render(request, 'list/star-result.html', {'results': results})
+
+
+def farm_form(request):
+    lib = Lib.objects.all()
+    form = StoryForm(request.POST or None)
+
+    if form.is_valid():
+        form.save()
+        return redirect('list:farm_results')
+    return render(request, 'list/farm-form.html', {'lib':lib, 'form':form})
+
+
+def farm_result(request):
+    results = StoryElement.objects.all().last()
+    return render(request, 'list/farm-result.html', {'results': results})
+
+
+
+def mice_form(request):
+    lib = Lib.objects.all()
+    form = StoryForm(request.POST or None)
+
+    if form.is_valid():
+        form.save()
+        return redirect('list:mice_results')
+    return render(request, 'list/mice-form.html', {'lib':lib, 'form':form})
+
+
+def mice_result(request):
+    results = StoryElement.objects.all().last()
+    return render(request, 'list/mice-result.html', {'results': results})
+
+
+def santa_form(request):
+    lib = Lib.objects.all()
+    form = StoryForm(request.POST or None)
+
+    if form.is_valid():
+        form.save()
+        return redirect('list:santa_results')
+    return render(request, 'list/santa-form.html', {'lib':lib, 'form':form})
+
+
+def santa_result(request):
+    results = StoryElement.objects.all().last()
+    return render(request, 'list/santa-result.html', {'results': results})
 
 
 

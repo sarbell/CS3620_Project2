@@ -1,0 +1,29 @@
+{% extends 'list/base.html' %}
+{% block body %}
+    <div class="container py-5">
+        <div class="row">
+            <div class="col pb-2">
+                <h3 class="text-center">{{ results }}</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col py-3 px-5 border">
+{#                <h5 class="py-3 text-info story">Road Rage</h5>#}
+                <span class="story">
+                <p>
+                   I was driving in a perfectly safe manner, being {{ results.field1 }} aware of the {{ results.field2 }} ahead of me.
+                    {{ results.field3 }}! I yelled, as suddenly this monster of a {{ results.field4 }} was trying to eat my prius.
+                    Why do I even {{ results.field5 }}? This driver was so crazy I almost swerved into a completely different lane.
+                    He was laughing when he saw my {{ results.field6 }} face. This enraged my soul with exquisite {{ results.field7 }}
+                    and I distinctively followed him until he arrived at his destination.
+                    There, I gave him a {{ results.field8 }} scolding and told him how I felt about his driving.
+                    I was then so surprised to find out it was {{ results.field9 }} when he took sunglasses off.
+                    He apologized and I {{ results.field10 }} home in shock.
+                </p>
+                </span>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+

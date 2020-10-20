@@ -1,0 +1,27 @@
+{% extends 'list/base.html' %}
+{% block body %}
+    <div class="container py-5">
+        <div class="row">
+            <div class="col pb-2">
+                <h3 class="text-center">{{ results }}</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col py-3 px-5 border">
+                <span class="story">
+                <p>
+                    “Help me, Obi-Wan Kenobi. You’re my only {{ results.field1 }}.” — Leia Organa <br> <br>
+                    “The Force will be with you. {{ results.field2 }}.” — Obi-Wan Kenobi <br> <br>
+                    “Do. Or do not. There is no {{ results.field3 }}.” — Yoda <br> <br>
+                    “When gone am I, the last of the Jedi will you be. The Force runs {{ results.field4 }} in your family. Pass on what you have learned.” — Yoda<br><br>
+                    “Just for once, let me look on you with my own {{ results.field5 }}.” — Anakin Skywalker<br><br>
+                    There’s always a bigger {{ results.field6 }}.” — Qui-Gon Jinn<br><br>
+                    “So this is how liberty dies. With {{ results.field7 }} applause.” — Padmé Amidala<br><br>
+                </p>
+                </span>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+

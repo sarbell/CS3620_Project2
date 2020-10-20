@@ -1,0 +1,28 @@
+{% extends 'list/base.html' %}
+{% block body %}
+    <div class="container py-5">
+        <div class="row">
+            <div class="col pb-2">
+                <h3 class="text-center">{{ results }}</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col py-3 px-5 border">
+                <span class="story">
+                <p>
+                    Isn't Trick or Treating a strange thing to do?<br>
+                    We dress up as people, whether they be real or fake, gross, or cute
+                    and go visit random strangers asking them for candy. Isn't that strange to you?! <br>
+                    Whether you go as a {{ results.field1 }}, a {{ results.field2 }}, a serial killer, or cereal killer... as Darth Vadar, or a lion, all are welcome.
+                    Every kid loves feeling like they are {{ results.field3 }} and something extra {{ results.field4 }} when they put their costumes on.
+                    Parents are {{ results.field5 }} enough to walk their children through the {{ results.field6 }} to get candy from strangers and friends alike. Why do parents
+                    do this? I suppose because they want {{ results.field7 }}, too.
+                    {{ results.field1 }}
+                </p>
+                </span>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
